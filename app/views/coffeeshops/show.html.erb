@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @coffeeshop.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @coffeeshop.address %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @coffeeshop.website %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @coffeeshop.description %>
+</p>
+
+<%= link_to 'Edit', edit_coffeeshop_path(@coffeeshop) %> |
+<%= link_to 'Back', coffeeshops_path %>

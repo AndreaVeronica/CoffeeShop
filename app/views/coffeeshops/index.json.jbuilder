@@ -1,0 +1,1 @@
+json.array! @coffeeshops, partial: 'coffeeshops/coffeeshop', as: :coffeeshop

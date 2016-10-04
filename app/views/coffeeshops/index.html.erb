@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Coffeeshops</h1>
+  <div class="card-display">
+    <% @coffeeshops.each do |coffeeshop| %>
+     <div class="coffee-shop-card">
+
+        <p><%= coffeeshop.name %></p>
+        <p><%= coffeeshop.address %></p>
+        <p><%= coffeeshop.website %></p>
+        <p><%= coffeeshop.description %></p>
+        <button><%= link_to 'Show', coffeeshop %></button>
+        <button><%= link_to 'Edit', edit_coffeeshop_path(coffeeshop) %></button>
+        <button><%= link_to 'Destroy', coffeeshop, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+
+      </div>
+    <% end %>
+   </div>
+   <div class="map-display">
+        <div style='width: 800px;'>
+        <div id="map" style='width: 800px; height: 400px;'></div>
+       </div>
+   </div>
+<br>
+
+<%= link_to 'New Coffeeshop', new_coffeeshop_path %>

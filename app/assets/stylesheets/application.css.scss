@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+
+@import "bootstrap-variables.scss";
+@import "bootstrap-custom-variables.scss";
+@import "bootstrap-sprockets.scss";
+@import "bootstrap.scss";
+
+body {
+  padding-top: $navbar-height + 10px;
+}
+.card-display{
+  width: 50vw;
+}
+.map-display{
+  width: 49vw;
+}
+.coffee-shop-card{
+  width: 500px;
+  border: 1px solid black;
+  padding: 20px;
+
+}
